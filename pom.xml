@@ -81,31 +81,7 @@
         <docker.image.prefix>springcommunity</docker.image.prefix>
 
     </properties>
-    <repositories>
-       <repository>
-         <id>mavenfeed</id>
-         <url>https://pkgs.dev.azure.com/kayalvizinataraj1520/mavenartifact/_packaging/mavenfeed/maven/v1</url>
-         <releases>
-         <enabled>true</enabled>
-         </releases>
-         <snapshots>
-         <enabled>true</enabled>
-         </snapshots>
-       </repository>
-    </repositories>
     
-    <distributionManagement>
-       <repository>
-          <id>mavenfeed</id>
-          <url>https://pkgs.dev.azure.com/kayalvizinataraj1520/mavenartifact/_packaging/mavenfeed/maven/v1</url>
-          <releases>
-          <enabled>true</enabled>
-          </releases>
-          <snapshots>
-          <enabled>true</enabled>
-          </snapshots>
-        </repository> 
-    </distributionManagement>
     
     <dependencyManagement>
         <dependencies>
@@ -576,6 +552,31 @@
             <name>Spring Milestone Repository</name>
             <url>https://repo.spring.io/milestone</url>
         </repository>
+     
+       <repository>
+         <id>mavenfeed</id>
+         <url>https://pkgs.dev.azure.com/kayalvizinataraj1520/mavenartifact/_packaging/mavenfeed/maven/v1</url>
+         <releases>
+         <enabled>true</enabled>
+         </releases>
+         <snapshots>
+         <enabled>true</enabled>
+         </snapshots>
+       </repository>
+    
+    <distributionManagement>
+       <repository>
+          <id>mavenfeed</id>
+          <url>https://pkgs.dev.azure.com/kayalvizinataraj1520/mavenartifact/_packaging/mavenfeed/maven/v1</url>
+          <releases>
+          <enabled>true</enabled>
+          </releases>
+          <snapshots>
+          <enabled>true</enabled>
+          </snapshots>
+        </repository> 
+    </distributionManagement>
     </repositories>
+    
 
 </project>
